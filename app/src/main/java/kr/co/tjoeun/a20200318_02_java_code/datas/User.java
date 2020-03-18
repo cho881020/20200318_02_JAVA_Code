@@ -1,6 +1,8 @@
 package kr.co.tjoeun.a20200318_02_java_code.datas;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 
     private String name;
     private int birthYear;
