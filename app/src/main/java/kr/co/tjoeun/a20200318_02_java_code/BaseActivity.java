@@ -5,9 +5,13 @@ package kr.co.tjoeun.a20200318_02_java_code;
 // 1) 이벤트 세팅, 2) 초기 값 세팅
 
 
+import android.content.Context;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
+
+    public Context mContext = this;
 
     public abstract void setupEvents();
     public abstract void setValues();

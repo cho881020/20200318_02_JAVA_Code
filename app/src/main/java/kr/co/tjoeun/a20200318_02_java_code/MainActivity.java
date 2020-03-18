@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import kr.co.tjoeun.a20200318_02_java_code.datas.User;
 
@@ -30,7 +31,7 @@ public class MainActivity extends BaseActivity {
 
         User u = new User("조경진", 1988);
 
-        Intent intent = new Intent(MainActivity.this, UserInfoActivity.class);
+        Intent intent = new Intent(mContext, UserInfoActivity.class);
         intent.putExtra("userInfo", u);
         startActivity(intent);
 
@@ -39,6 +40,8 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setValues() {
+
+        Toast.makeText(mContext, "테스트용", Toast.LENGTH_SHORT).show();
 
     }
 }
